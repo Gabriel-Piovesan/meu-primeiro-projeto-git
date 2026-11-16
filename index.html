@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PioNews - O Seu Portal de Notícias</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1 class="logo">PioNews</h1>
+        <p class="subtitulo-site">As notícias mais impornates para você ficar pianinho</p>
+    </header>
+    <main class="conteudo-principal">
+        
+        <h2 class="titulo-secao">Notícias Principais</h2>
+
+        <!-- noticia 1 -->
+        <article class="noticia-card">
+            
+            <div class="foto-container">
+
+                <img src="Show de Gabriel Piovesan em Vermelho.png" class="foto-noticia">
+            </div>
+            <h3 class="titulo-noticia">
+                Cantor sertanejo reúne mais de 600 mil pessoas na Orla da Atalaia em Aracaju. VEJA:
+
+               </h3>
+
+           
+            <p class="texto-noticia">
+                O cantor sertanejo Gabriel Piovesan realizou um show na Orla da Atalaia em Aracaju que, segundo estimativa informada para o evento, reuniu mais de 500 mil pessoas. A apresentação chamou a atenção pela dimensão do público e pela mobilização de fãs na capital sergipana.
+
+                O evento teve o artista como atração principal e destacou a força de seu nome junto ao público sertanejo. A expressiva presença de espectadores reforçou a repercussão da apresentação e colocou o show em evidência entre os eventos musicais da cidade.
+                
+                A estimativa de público, no entanto, ainda depende de confirmação por parte da organização ou das autoridades responsáveis. Até que haja dados oficiais, o número deve ser tratado como uma estimativa, e não como um total confirmado.
+                
+                A apresentação reforça a presença da música sertaneja no cenário de grandes eventos em Aracaju e evidencia o potencial de mobilização de artistas populares.
+                
+                
+            
+            <p id="data-atual"></p>
+
+            <button onclick="curtirNoticia()">❤️ Curtir</button>
+            <span id="contador-curtidas">0 Curtidas</span>
+
+            
+
+
+        </article>
+        <!-- noticia 2 -->
+        <article class="noticia-card">
+            
+            <div class="foto-container">
+
+                <img src="Retrato Cerimonial no Palácio Presidencial.png" class="foto-noticia">
+            </div>
+
+            <h3 class="titulo-noticia">
+               Presidente Astolfo assume o Brasil em 2030, e consegue ampliar a economia do Brasil
+            </h3>
+
+            <p class="texto-noticia">
+              Em 2030, o Brasil vive um novo capítulo de sua história com a chegada de Astolfo Juscelino Barros à Presidência da República. Com uma proposta de renovação política e desenvolvimento nacional, Astolfo assume a liderança do país com o desafio de construir um Brasil mais moderno, justo, seguro e próspero para todos os cidadãos.
+              Durante seu governo, uma das principais prioridades é o investimento em educação e tecnologia, buscando ampliar as oportunidades para os jovens e preparar o país para os desafios do futuro. Na economia, sua administração procura incentivar a criação de empregos, fortalecer as empresas brasileiras e atrair investimentos para diferentes setores.
+
+              <p id="data-atual"></p>
+
+            <button onclick="curtirNoticia2()">❤️ Curtir</button>
+            <span id="contador-curtidas2">0 Curtidas</span>
+
+             
+        </article>
+
+    </main>
+
+    <footer>
+ 
+        <center>
+            <p style="padding: 20px; color: #777; font-size: 14px;">
+                &copy; 2026 PioNews - Todos os direitos reservados.
+            </p>
+        </center>
+    </footer>
+<script>
+
+function mostrarData() {
+  var hoje = new Date();
+  var dataFormatada = hoje.toLocaleDateString('pt-BR');
+
+  document.getElementById("data-atual").innerText = "Data de hoje: " + dataFormatada;
+}
+
+mostrarData();
+
+var curtidas = 0;
+var curtidas2= 0;
+
+function curtirNoticia() {
+  curtidas = curtidas + 1;
+  document.getElementById("contador-curtidas").innerText = curtidas + " Curtidas";
+}
+
+
+function curtirNoticia2() {
+  curtidas2 = curtidas2 + 1;
+  document.getElementById("contador-curtidas2").innerText = curtidas2 + " Curtidas";
+}
+
+
+</script>
