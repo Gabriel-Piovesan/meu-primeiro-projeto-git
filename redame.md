@@ -1,1 +1,0 @@
-material-de-estudo.md
